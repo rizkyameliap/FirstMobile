@@ -23,7 +23,6 @@ class Halaman2Activity : AppCompatActivity() {
     }
 
     private fun initLayout() {
-        // Pastikan setIcon + setText disini
         binding.layoutPhone.imgIcon.setImageResource(R.drawable.ic_phone)
         binding.layoutPhone.tvLayout.text = getString(R.string.nomor_telepon)
 
@@ -35,6 +34,10 @@ class Halaman2Activity : AppCompatActivity() {
 
         binding.layoutIg.imgIcon.setImageResource(R.drawable.ic_himpunan)
         binding.layoutIg.tvLayout.text = getString(R.string.instagram_url)
+
+        binding.menuKoleksiBuku.imgIcon.setImageResource(R.drawable.ic_book)
+        binding.menuKoleksiBuku.tvLayout.text = getString(R.string.koleksi_buku)
+
     }
 
     private fun initListener() {
@@ -64,6 +67,11 @@ class Halaman2Activity : AppCompatActivity() {
 
         binding.btnBack.setOnClickListener {
             finish()
+        }
+
+        binding.menuKoleksiBuku.root.setOnClickListener {
+            val intent = Intent(this, DaftarBukuActivity::class.java)
+            startActivity(intent)
         }
     }
 }

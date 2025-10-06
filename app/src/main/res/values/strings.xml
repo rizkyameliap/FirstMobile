@@ -22,5 +22,7 @@
     <string name="deskripsi_ikon_email">Ikon Email</string>
     <string name="deskripsi_ikon_lokasi">Ikon Lokasi</string>
     <string name="deskripsi_ikon_instagram">Ikon Instagram</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="koleksi_buku">Koleksi Buku</string>
 
 </resources>
